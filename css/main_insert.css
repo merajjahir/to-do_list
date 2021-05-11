@@ -1,0 +1,18 @@
+#plus_img {
+    transition:1s;
+}
+#plus_img:hover{
+    transform: rotateZ(180deg);
+    opacity: 0.8;
+}
+
+#delete_img{
+    margin-left: 30px;
+    transform: rotateZ(45deg);
+
+}
+
+.span_due_done,.due_h3,.done_h3:hover {
+    cursor: pointer;
+
+}

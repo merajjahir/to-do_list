@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   
+    <!-- MY CSS LINK'S -->
+   
+    <!-- main css -->
+    <link rel="stylesheet"type="text/css" href="../css/main_to_do.css">
+   
+    <!-- the menu typeahed -->
+    <link rel="stylesheet"type="text/css" href="../css/typeahed.css">
+    
+    <!-- the setttings icon -->
+    <link rel="stylesheet"type="text/css" href="../css/setting_icon.css">
+    
+    <!-- the input/left section -->
+    <link rel="stylesheet"type="text/css" href="../css/landing_input_sec.css">
+    
+    <!-- the nav/right section -->
+    <link rel="stylesheet"type="text/css" href="../css/nav.css">
+    
+    <!-- the nav/right section -->
+    <link rel="stylesheet"type="text/css" href="../css/main_insert.css">
+    
+    
+    <title> YOUR TO-DO LIST</title>
+    <style>
+        
+
+    
+    
+    </style>
+</head>
+<body>
+
+    <section id="todo" >
+        <!-- navigation section    -->
+        <div id="nav_menu" >
+
+            <div class="nav" id="nav_whole">
+
+                <div  id="all_nav_icons">
+
+                    <ul>
+
+                        <!-- menu icon -->
+                        <li>
+                            <button id="menu_both_icon">
+                                <img src="images/menu_icon.png" id="i_am_menu" width="40px"alt="">
+                                <img src="images/back.png" style="display: none;" id="i_am_back"width="40px"alt="">
+                            </button>
+                        </li>
+
+                        <li>
+                            <button>
+                                <img src="images/search_icon.png" id="search_icon" width="50px"alt="">
+                            </button>
+
+
+                            <!-- search input field's  -->
+                            <div  id="menu_icon">
+                                <!--the clss style_all_input is very necessary -->
+                                <input type="text" class="style_all_input" id="input_query_field" style="z-index: 110;">
+
+                                <div id="sibling" class="result">
+                                    <!-- important div for type ahead  -->
+                                </div>
+
+                                <input type="submit" id="input_submit" value="=>" style="z-index: 120;" >
+
+                            </div>
+                        </li>
+
+                             <!-- setting_icon  -->
+                        <li id="setting_li">
+                            <button id="setting_icon">
+                                <img src="images/settings_icon.png" width="50px"alt="">
+                            </button>
+
+                        </li>
+                    </ul>
+
+                </div>
+
+                
+
+                
+            </div>
+           
+        </div>
+
+        <!-- main landing section -->
+        <div id="main_landing_section" >
+            <div id="title">
+              <h1 id="iamtheman">YOUR TO DO LIST</h1>
+              <input type="text" id="title_name" placeholder="YOUR TO DO LIST TITLE" style="display: none;">
+           
+            </div>
+            <form onsubmit="return false">
+                <div class="input_class" id="insert_datas">
+
+                    <!----the div all the external input's will get appended to -->
+                    <div id="data_in">
+                        <!---dum dum don't write any thing here look at the insert_data.js file -->
+                        <!-- <h2>ami hocci rohim</h2>
+                        <h2>ami hocci rohim</h2>
+                        <h2>ami hocci rohim</h2>
+                        <h2>ami hocci rohim</h2>
+                        <h2>ami hocci rohim</h2>
+                        <h2>ami hocci rohim</h2>
+                        <h2>ami hocci rohim</h2>
+                        <h2>ami hocci rohim</h2>
+                        <h2>ami hocci rohim</h2>
+                        <h2>ami hocci rohim</h2>
+                        <h2>ami hocci rohim</h2> -->
+
+                        <!-- <div id="due_done"></div> -->
+                    </div>
+                  
+                    <img src="../site/images/plus.png" width="30px" id="plus_img"   alt="A plus sign to add to-do">
+                    <!-- <img src="../site/images/plus.png" width="30px" id="delete_img"   alt="A plus sign to add to-do"> -->
+
+                    <button type="submit"  id="main_submit_button" class="btn">Submit</button>
+                
+                </div>
+            </form>
+
+            
+        </div>
+        
+
+
+   
+        
+    </section>
+
+    <!-- MY JS FILE -->
+    <script src="../js/nav_for_back.js"></script>
+    
+    <!-- the title  -->
+    <script src="../js/title.js"></script>
+    
+    <!-- the nav_menu_length  -->
+    <script src="../js/nav.js"></script>
+
+    
+    <!-- the insert_datas  -->
+    <script src="../js/main_insert_data.js"></script>
+
+    <!-- the delete_datas  -->
+    <script src="../js/main_data.js"></script>
+
+    
+    
+    <!-- server file -->
+    <script src="server_database/client.js"></script>
+</body>
+</html>

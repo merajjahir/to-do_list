@@ -1,0 +1,65 @@
+
+/* the left section  */
+
+#main_landing_section {
+    position: absolute;
+    top: 0%;
+    left: 30%;
+    width: 70%;
+}
+
+
+.style_all_input{
+    /* all the input field's need to have this class */
+    /* all the input field's need to have this class */
+    display: block;
+    width: 500px;
+    font-size: 1.5em;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    background-color:#000000;
+    color: gray;
+    outline: none;
+    border: none;
+    border-bottom:2px solid#14b614;
+    
+    /* all the input field's need to have this class */
+    /* all the input field's need to have this class */
+}
+
+
+#main_landing_section button{
+    background:black;
+    color:#14b614;
+    outline: none;
+    border-radius: 5%;
+    border:2px solid #14b614;
+    padding:15px 20px;
+}
+
+/* the input button need's to change as the desing just got passed by my dumb self */
+#main_submit_button{
+    position: relative;
+    top: 50px;
+    left: 550px;
+}
+
+
+#main_landing_section h2{
+    font-size: 1.5em;
+    margin-top:8%;
+    color:white;
+    
+}
+h1{
+    font-size: 1.8em;
+    margin-top:8%;
+    color:#14b614;
+    
+}
+#main_landing_section span{
+    color:#14b614;
+}
+#main_landing_section p{
+    color:red;
+}

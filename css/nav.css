@@ -1,0 +1,82 @@
+
+/* the menu id there is class under it tho */
+#nav_menu{
+    position: relative;
+    height: 99vh;
+    width: 25%;
+}
+
+/* that's probably a mistake */
+.nav{
+    position: fixed;
+    overflow: visible;
+    top: 0px;
+    left:0px;
+    width:100px;
+    border:none;
+    border-right: 5px solid var(--color-main);
+    border-left: 5px solid var(--color-main);
+
+} 
+
+/* .nav{
+    
+    width: 30%;
+    height: 100%;
+    overflow: visible;
+    
+
+} */
+/* fixing the position of the menu icon's all together*/
+#all_nav_icons {
+    position: relative;
+    overflow: visible;
+    height: 99vh;
+    top:100px;
+    left:20px;
+
+}
+/* #all_nav_icons {
+    position: absolute;
+    top:10%;
+    left:10%;
+
+} */
+
+/* the class that is handling  the menu icons separately */
+
+.nav ul li{
+    list-style: none;
+    margin-bottom:150px ;
+    overflow: hidden;
+
+}
+
+/* the setting icon was defacting the code as of the 
+margin bottom is too much at the bottom so it had to be
+individualy removed*/
+
+#setting_li{
+    margin-bottom:0px;
+}
+.nav ul li button{
+
+    background-color: black;
+    border:none;
+    transition: 1.4s;
+
+
+}
+
+button:hover{
+    transform: rotate(10deg);
+    transition: 1.4s;
+    cursor: pointer;
+      
+}
+
+.nav ul li #menu_both_icon:hover{
+    transform: none;
+    transition: none;
+}
+

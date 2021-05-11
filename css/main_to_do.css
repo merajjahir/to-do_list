@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    
+--small-index:100 ;
+--midd-index:110 ;
+--large-index:120 ;
+--bg-large-index:130 ;
+--c-transition:"2s";
+--color-main:#14b614;
+}
+section{
+    position: relative;
+}
+/* the background color for the entire website */
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+
+#todo{
+    position: relative;
+    display: flex;
+}
+
+

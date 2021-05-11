@@ -1,0 +1,45 @@
+
+/* setting icon that need's to be valued by default */
+
+#setting_icon{
+    position: absolute;
+    left :0px;
+    top :385px;
+    
+}
+
+.setting_anim{
+    /* left:240px;top:0px;opacity: 1; */
+    animation-name: settings_anim;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;;
+}
+
+
+@keyframes settings_anim {
+
+    0%{left:0px;top:385px; opacity: 1}
+    50% {left:350px;top:300px; opacity: .2;transform: rotateZ(360deg);}
+    75%{left:350px;top:100px;  opacity: .2;transform: rotateZ(360deg);}
+    100% {left:240px;top:0px;opacity: 1;}
+}
+.setting_anim_back{
+    /* left:240px;top:0px;opacity: 1; */
+    
+    left :0px;
+    top :385px;
+    /* animation-name: settings_anim_back;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;; */
+}
+
+
+@keyframes settings_anim_back {
+
+    0%{left:240px;top:0px;opacity: 1;}
+    50% {left:350px;top:100px;  opacity: .2;transform: rotateX(360deg);}
+    75%{left:350px;top:300px; opacity: .2;}
+    100% {left:0px;top:385px; opacity: 1}
+}
