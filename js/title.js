@@ -22,7 +22,7 @@ title_h1.addEventListener("click",() =>
             e.preventDefault();
             if( title_value === ""){
                 let time =new Date();
-                title_h1.textContent = `${time.toLocaleDateString()} - ${time.toLocaleTimeString()} --YOU SUCKKER !!! `;
+                title_h1.textContent = `${time.toLocaleDateString()} ${time.toLocaleTimeString('en-US', { hour12: false })} `;
                 title_h1.placeholder = "YOU SUCKKER !!!";
 
                 title_name.style.display = "none";

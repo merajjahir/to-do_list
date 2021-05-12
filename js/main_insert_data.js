@@ -83,7 +83,7 @@ plus_img.addEventListener("click",()=>{
     // pride which is probably not good.
     //it is important to left this number constant here as 
     // it does'nt get renewed every time the user presse's enter.
-    const numbers_of_h2 = document.querySelectorAll("#data_in > h2").length;
+    const numbers_of_h2 = document.querySelectorAll("#data_in >span> h2").length;
     console.log(numbers_of_h2);
     
 
@@ -102,6 +102,7 @@ plus_img.addEventListener("click",()=>{
             {
                     //setting the h3 and the input placeholder to default value
                     h2_element.textContent = `${numbers_of_h2}. sure you don't wanna do someting`;
+                    h2_element.textContent = `#. sure you don't wanna do someting`;
                     input_tag.placeholder = "sure you don't wanna do something";
 
                     input_tag.parentElement.removeChild(input_tag)
@@ -111,7 +112,8 @@ plus_img.addEventListener("click",()=>{
 
             }else{
                     //setting the h3 to the input value
-                    h2_element.textContent = `${numbers_of_h2}. ${input_value}`;
+                    // h2_element.textContent = `${numbers_of_h2}. ${input_value}`;
+                    h2_element.textContent = `#. ${input_value}`;
                     input_tag.placeholder = input_value;
 
                     h2_element.style.display = "block";
@@ -132,7 +134,8 @@ plus_img.addEventListener("click",()=>{
                     input_due.style.position = "absolute";
         
                     input_due.style.color = "red";
-                    input_due.style.fontSize = "1.1em"
+                    input_due.style.fontSize = "1.1em";
+                    input_due.style.borderBottom = "2px solid red";
                     input_due.style.paddingTop = "30px";
                     input_due.style.display = "inline-block";
 
@@ -142,7 +145,8 @@ plus_img.addEventListener("click",()=>{
                     
                     input_done.style.display = "none";
                     input_done.style.color = "#14b614";
-                    input_done.style.fontSize = "1.1em"
+                    input_done.style.fontSize = "1.1em";
+                    input_done.style.borderBottom = "2px solid #14b614";
                     input_done.style.paddingTop = "30px";
                     input_done.style.display = "none";
                     

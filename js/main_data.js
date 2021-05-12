@@ -56,32 +56,36 @@ let main_submit_button = document.getElementById("main_submit_button");
 
         }
 
-        // console.log(title_h1.textContent);
-        // console.log( main_CHOICE_string);
-        // console.log(status_collector);
+        // converting the title to array
+        let choice_Title_array = [title_h1.textContent];
         
+        
+        let fectch_data = async () => {
+            let all_datas = {
+                ChoiceTitle : choice_Title_array,
+                CHOICE : main_CHOICE_string,
+                choice_status : status_collector
+            }
+    
+            let all_data_json = JSON.stringify(all_datas);
+            // console.log(all_data_json);
+    
+            let data_entry_server_to_database = await fetch('/to-do/site/server_database/insert_datas.php', 
+                                                        {
+                                                            method: 'POST',
+                                                            body: new URLSearchParams(`all_data=${all_data_json}`),
+                                                        }
+                                                    )
+    
+    
+    
+            let data_receive = await data_entry_server_to_database.text();
+            console.log(data_receive)
+    
 
-        let all_datas = {
-            ChoiceTitle : title_h1.textContent,
-            CHOICE : main_CHOICE_string,
-            choice_status : status_collector
         }
 
-        let all_data_json = JSON.stringify(all_datas);
-        console.log(all_data_json);
-
-        let data_entry_server_todatabase = await fetch('/to-do/site/server_database/insert_datas.php', 
-                                                    {
-                                                        method: 'POST',
-                                                        body: new URLSearchParams(`?all_data=${data_json}`),
-                                                    }
-                                                )
-
-
-
-        let data_receive = await data_entry_server_todatabase.json();
-        console.log(data_receive)
-
+        fectch_data();
 
 
         

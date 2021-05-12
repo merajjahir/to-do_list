@@ -97,37 +97,27 @@
         <div id="main_landing_section" >
             <div id="title">
               <h1 id="iamtheman">YOUR TO DO LIST</h1>
-              <input type="text" id="title_name" placeholder="YOUR TO DO LIST TITLE" style="display: none;">
+              <input type="text" id="title_name" onsubmit="return false" placeholder="YOUR TO DO LIST TITLE" style="display: none;">
            
             </div>
-            <form onsubmit="return false">
+            <div >
                 <div class="input_class" id="insert_datas">
 
                     <!----the div all the external input's will get appended to -->
                     <div id="data_in">
                         <!---dum dum don't write any thing here look at the insert_data.js file -->
-                        <!-- <h2>ami hocci rohim</h2>
-                        <h2>ami hocci rohim</h2>
-                        <h2>ami hocci rohim</h2>
-                        <h2>ami hocci rohim</h2>
-                        <h2>ami hocci rohim</h2>
-                        <h2>ami hocci rohim</h2>
-                        <h2>ami hocci rohim</h2>
-                        <h2>ami hocci rohim</h2>
-                        <h2>ami hocci rohim</h2>
-                        <h2>ami hocci rohim</h2>
-                        <h2>ami hocci rohim</h2> -->
-
+                      
                         <!-- <div id="due_done"></div> -->
                     </div>
                   
                     <img src="../site/images/plus.png" width="30px" id="plus_img"   alt="A plus sign to add to-do">
                     <!-- <img src="../site/images/plus.png" width="30px" id="delete_img"   alt="A plus sign to add to-do"> -->
 
-                    <button type="submit"  id="main_submit_button" class="btn">Submit</button>
+                    <button type="submit"  id="main_submit_button" class="btn">Save</button>
+                    <button type="submit"  id="main_delete_button" class="btn">Delete</button>
                 
                 </div>
-            </form>
+            </div>
 
             
         </div>
@@ -150,6 +140,9 @@
     
     <!-- the insert_datas  -->
     <script src="../js/main_insert_data.js"></script>
+
+    <!-- the delete_datas  -->
+    <script src="../js/main_delete_data.js"></script>
 
     <!-- the delete_datas  -->
     <script src="../js/main_data.js"></script>
