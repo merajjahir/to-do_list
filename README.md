@@ -17,7 +17,7 @@ enter that will get the info form the input element to a h2 element.
 ![plus_button](https://user-images.githubusercontent.com/74041408/118218972-57723d80-b49a-11eb-9b02-41795945bd0b.png)
 
 
-# the user can also double click the title and edit the title.
+the user can also double click the title and edit the title.
 
 # pressing enter
 ![pressing_enter](https://user-images.githubusercontent.com/74041408/118219027-7670cf80-b49a-11eb-9641-780ae67cfcca.png)
@@ -35,7 +35,7 @@ task's can be accessable from the typeahead input field which is located in menu
 
 
 # clicking menu icon and exposing the typeahead input field 
-# can be search with title and date
+# can be searched with title and date
 ![menu_expanding](https://user-images.githubusercontent.com/74041408/118219400-3a8a3a00-b49b-11eb-92d1-7995b35dc16f.png)
 
 
