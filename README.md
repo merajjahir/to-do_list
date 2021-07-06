@@ -51,10 +51,10 @@
 ![from_the_edit_panal_update_or_delete](https://user-images.githubusercontent.com/74041408/118219943-4d513e80-b49c-11eb-93a2-69f6c9477a4c.png)
 
 
-### then the user can either update the to-do's or delete them completely from the database
+> then the user can either update the to-do's or delete them completely from the database
 
-### there is a catch tho , as the plus sign doesn't really save the todo's it only 
-### create's a line to write one the cross icon/the delete icon also dosen't delete them 
-### it remove's a line from todo . the main insert and delete happne's with the save and  
-### delete button
+> there is a catch tho , as the plus sign doesn't really save the todo's it only 
+> create's a line to write one the cross/delete icon also dosen't delete them 
+> it remove's a line from todo . the main insert and delete happen's with the **save** and  
+> **delete** button
 
